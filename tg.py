@@ -22,19 +22,12 @@ if api_hash==(""):
 def cls():
     os.system("clear")
 
-
-
 client = TelegramClient("session_name", api_id, api_hash)
 
-
 client.start()
-konec=input (Fore.GREEN+"надпись в конце >>> ")
+konec=input (Fore.GREEN+"надпись в конце >>> "+Fore.WHITE)
 cls()
 
-a = "2"
-n=str("\n")
-
-text=("START")
 z = 1
 @client.on(events.NewMessage(pattern=('heart❤️')))
 async def edit(event):
@@ -402,16 +395,14 @@ async def edit(event):
 💋💋💋💋💋💋😻💋💋💋💋💋💋""")
   time.sleep(0.2)
   await event.edit(konec)
-if a=="2":
-    print(" \n ")
-    idp = "me"
-    client.send_message(idp, text)
-    print(Fore.GREEN + "   START ")
+print(" \n ")
+client.send_message('me', 'START')
+print(Fore.GREEN + "   START ")
 while z==1:
   for m in client.iter_messages('me', 1):
     if m.message == "exit":
-      client.send_message(idp, "ok")
+      client.send_message('me', "ok")
       z=z+1
     elif m.message == "Exit" :
-       client.send_message(idp, "ok")
+       client.send_message('me', "ok")
        z=z+1
