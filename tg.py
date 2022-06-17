@@ -395,7 +395,7 @@ async def edit(event):
 💋💋💋💋💋💋😻💋💋💋💋💋💋""")
   time.sleep(0.2)
   await event.edit(konec)
-print(Fore.RED+"по всем вопросам t.me://Satana_N666 \n ")
+print(Fore.RED+"по всем вопросам t.me://Ukrainian_Satana \n ")
 client.send_message('me', 'START')
 print(Fore.GREEN + "   START ")
 while z==1:
