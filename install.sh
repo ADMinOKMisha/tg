@@ -1,1 +1,1 @@
-pkg upgrade -y && pkg update -y && pkg install python -y && pkg install python2 -y && pkg install python3 -y && pip install requests -y && pip install colorama -y && pip install telethon -y && > .api_id && > .api_hash && bash .install.sh
+pkg upgrade && pkg update && pkg install python && pkg install python2 && pkg install python3 && pip install requests && pip install colorama && pip install telethon && > .api_id && > .api_hash && bash .install.sh
