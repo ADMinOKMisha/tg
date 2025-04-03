@@ -10,12 +10,12 @@ file=open(".api_hash", "r")
 api_hash= (file.read())
 file.close
 if api_id==(""):
-  api_id=input("введите api_id: ")
+  api_id=input("введіть api_id: ")
   file=open(".api_id", "w")
   file.write(api_id)
   file.close()
 if api_hash==(""):
-  api_hash=input("введите api_hash: ")
+  api_hash=input("введіть api_hash: ")
   file=open(".api_hash", "w")
   file.write(api_hash)
   file.close()
@@ -25,7 +25,7 @@ def cls():
 client = TelegramClient("session_name", api_id, api_hash)
 
 client.start()
-konec=input (Fore.GREEN+"надпись в конце >>> "+Fore.WHITE)
+konec=input (Fore.GREEN+"надпис в кінці >>> "+Fore.WHITE)
 cls()
 
 z = 1
@@ -395,7 +395,7 @@ async def edit(event):
 💋💋💋💋💋💋😻💋💋💋💋💋💋""")
   time.sleep(0.2)
   await event.edit(konec)
-print(Fore.RED+"по всем вопросам t.me://Satana_N666 \n ")
+print(Fore.RED+"По всім питанням t.me://Satana_N666 \n ")
 client.send_message('me', 'START')
 print(Fore.GREEN + "   START ")
 while z==1:
